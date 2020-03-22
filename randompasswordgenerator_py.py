@@ -22,10 +22,9 @@ def generateRandomPassword():
     for i in range(5):
         pswd += random.choice(sourceRandom)
 
-    pswdList = list(password)
+    pswdList = list(pswd)
     random.SystemRandom().shuffle(pswdList)
     pswd = ''.join(pswdList)
     return pswd
 
-print ("Your Random Password is ", randomPassword())
-
+print ("Your Random Password is ", generateRandomPassword())
